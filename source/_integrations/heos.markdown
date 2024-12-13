@@ -220,6 +220,10 @@ Denon and Marantz do not currently publish an inventory of HEOS-enabled devices,
 
 Denon and Marantz products prior to 2013 and non-network connected products (i.e. turntables and some CD players) do not support HEOS.
 
+## Data updates
+
+HEOS pushes data to Home Assistant via the local network when data and entity states change in real-time.
+
 ## Known limitations
 
 - AVR receiver features, such as zone selection/control and power on/off, cannot be controlled through this integration. Use the [Universal Media Player](/integrations/universal/#denon-avr--heos) to combine AVR receiver functionality with this integration.
