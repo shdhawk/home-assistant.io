@@ -28,6 +28,11 @@ that allows you to stream music to HEOS Built-in products from [Denon](https://w
 - Grouping and ungrouping HEOS devices
 - Clearing playlists
 
+## Prerequisites
+
+1. One or more HEOS-capable products
+2. Optionally, a [HEOS Account](https://support.denon.com/app/answers/detail/a_id/17041) to access music services, playlists, and favorites.
+
 {% include integrations/config_flow.md %}
 
 {% note %}
