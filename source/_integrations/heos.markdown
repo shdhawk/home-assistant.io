@@ -236,7 +236,7 @@ HEOS pushes data to Home Assistant via the local network when data and entity st
 
 #### Symptom: "IP_ADDRESS is not logged in to a HEOS account and will be unable to retrieve HEOS favorites..."
 
-The message above is logged and the `source_list` {% term attribute %} of the integration entity media_players are empty. Attempting call the `media_player.play_media` action
+The message above is logged and the `source_list` attribute of the integration's media_player entities are empty. Attempting call the `media_player.play_media` action
 for `favorite` and `playlist` will fail.
 
 ##### Description
