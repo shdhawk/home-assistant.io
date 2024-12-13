@@ -232,21 +232,17 @@ HEOS pushes data to Home Assistant via the local network when data and entity st
 
 ## Troubleshooting
 
-### Debugging
+### Missing favorites
 
-The HEOS integration will log additional information about commands, events, and other messages when the log level is set to `debug`. Add the relevant line below to the {% term "`configuration.yaml`" %} to enable debug logging:
+#### Symptom: "IP_ADDRESS is not logged in to a HEOS account and will be unable to retrieve HEOS favorites..."
 
-```yaml
-logger:
-  default: info
-  logs:
-    homeassistant.components.heos: debug
-    pyheos: debug
-```
+The message above is logged and the `source_list` {% term attribute %} of the integration entity media_players are empty. Attempting call the `media_player.play_media` action
+for `favorite` and `playlist` will fail.
 
-### Missing Favorites
+##### Description
 
-If the HEOS controller is not signed in to a HEOS account, HEOS favorites will not be populated in the media player source selection and the `media_player.play_media` action for `favorite` and `playlist` will fail. Additionally, the following warning will be logged at startup:
-> IP_ADDRESS is not logged in to a HEOS account and will be unable to retrieve HEOS favorites: Use the 'heos.sign_in' action to sign-in to a HEOS account
+The HEOS system is not logged in to a HEOS account. This occurs when the integration is first added, the HEOS account has changed (i.e. password reset), and sometimes after a firmware update.
 
-To resolve this issue, use the `heos.sign_in` action to sign the controller into an account as documented above. This only needs to be performed once, as the controller will remain signed in while the account credentials are valid.
+##### Resolution
+
+Use the [heos.sign_in action](/integrations/heos#action-heossign_in) to sign the HEOS system into a HEOS account. This only needs to be performed once, as the system will remain signed in while the account credentials are valid.
