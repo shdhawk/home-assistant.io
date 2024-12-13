@@ -32,7 +32,7 @@ Add this integration to automate playback and group configuration of HEOS-capabl
 
 ## Prerequisites
 
-1. One or more HEOS-capable products
+1. One or more [HEOS-capable products](/integrations/heos#supported-devices).
 2. Optionally, a [HEOS Account](https://support.denon.com/app/answers/detail/a_id/17041) to access music services, playlists, and favorites.
 
 {% include integrations/config_flow.md %}
