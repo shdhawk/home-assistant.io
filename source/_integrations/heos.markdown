@@ -24,9 +24,9 @@ Add this integration to automate playback and group configuration of HEOS-capabl
 
 - [Media Player](/integrations/media_player) {% term entities %} for each HEOS-capable product, including speakers, amps, and receivers (Denon and Marantz)
 - Viewing the currently playing media
-- Controlling play mode (i.e. play/pause), volume, mute, and shuffle
+- Controlling play mode (e.g., play/pause), volume, mute, and shuffle
 - Playing HEOS favorites, playlists, quick selects, URLs
-- Setting the source to physical inputs (i.e. `AUX1`)
+- Setting the source to physical inputs (e.g., `AUX1`)
 - Grouping and ungrouping HEOS devices
 - Clearing playlists
 
@@ -43,7 +43,7 @@ Only a single instance of the integration is needed to access the entire HEOS sy
 
 {% configuration_basic %}
 Host:
-    description: "The hostname or IP address of your HEOS device. If you have more than one device, select, or enter a host, that is connected to the LAN via wire or has the strongest wireless signal."
+    description: "The hostname or IP address (e.g., \"192.168.1.2\") of your HEOS device. If you have more than one device, select, or enter a host, that is connected to the LAN via wire or has the strongest wireless signal."
 {% endconfiguration_basic %}
 
 ## Removing the integration
@@ -70,7 +70,7 @@ data:
 | ---------------------- | -------- | ------------------------------------------------------------------- |
 | `entity_id`            | yes      | `entity_id` of the player(s)                                        |
 | `media_content_type`   | no       | Set to the value `favorite`                                         |
-| `media_content_id`     | no       | (i.e., `1`) or name (i.e., `Thumbprint Radio`) of the HEOS favorite |
+| `media_content_id`     | no       | (e.g., `1`) or name (e.g., `Thumbprint Radio`) of the HEOS favorite |
 
 ### Play a playlist
 
@@ -106,7 +106,7 @@ data:
 | ---------------------- | -------- | -------------------------------------------------------------------- |
 | `entity_id`            | yes      | `entity_id` of the player(s)                                         |
 | `media_content_type`   | no       | Set to the value `quick_select`                                      |
-| `media_content_id`     | no       | The quick select number (i.e., `1`) or name (i.e., `Quick Select 1`) |
+| `media_content_id`     | no       | The quick select number (e.g., `1`) or name (e.g., `Quick Select 1`) |
 
 ### Play a URL
 
@@ -218,7 +218,7 @@ Denon and Marantz do not currently publish an inventory of HEOS-enabled devices,
 
 ## Unsupported devices
 
-Denon and Marantz products prior to 2013 and non-network connected products (i.e. turntables and some CD players) do not support HEOS.
+Denon and Marantz products before 2013 and non-network connected products (e.g., turntables and some CD players) do not support HEOS.
 
 ## Data updates
 
@@ -241,7 +241,7 @@ for `favorite` and `playlist` will fail.
 
 ##### Description
 
-The HEOS system is not logged in to a HEOS account. This occurs when the integration is first added, the HEOS account has changed (i.e. password reset), and sometimes after a firmware update.
+The HEOS system is not logged in to a HEOS account. This occurs when the integration is first added, the HEOS account has changed (e.g. password reset), and sometimes after a firmware update.
 
 ##### Resolution
 
