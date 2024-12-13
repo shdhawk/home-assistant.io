@@ -39,6 +39,12 @@ that allows you to stream music to HEOS Built-in products from [Denon](https://w
 This integration only connects to a single {% term host %} to access the entire HEOS System on the network. Select, or enter a host, that is connected to the LAN via wire or has the strongest wireless signal.
 {% endnote %}
 
+## Removing the integration
+
+This integration follows standard integration removal. No extra steps are required.
+
+{% include integrations/remove_device_service.md %}
+
 ## Playing media
 
 ### Play a favorite
