@@ -209,6 +209,17 @@ action: heos.sign_out
 data: {% raw %}{}{% endraw %}
 ```
 
+## Supported devices
+
+Denon and Marantz do not currently publish an inventory of HEOS-enabled devices, however, many receiver and hi-fi products began including HEOS since 2013. Consult your product model to confirm support:
+
+- Denon [online manuals](https://www.denon.com/en-us/online-manuals.html) and [product archive](https://www.denon.com/en-us/support/product-archive/)
+- Marantz [online manuals](https://www.marantz.com/en-us/support/online-manuals.html) and [product archive](https://www.marantz.com/en-us/category/archive/)
+
+## Unsupported devices
+
+Denon and Marantz products prior to 2013 and non-network connected products (i.e. turntables and some CD players) do not support HEOS.
+
 ## Known limitations
 
 - AVR receiver features, such as zone selection/control and power on/off, cannot be controlled through this integration. Use the [Universal Media Player](/integrations/universal/#denon-avr--heos) to combine AVR receiver functionality with this integration.
