@@ -36,8 +36,13 @@ that allows you to stream music to HEOS Built-in products from [Denon](https://w
 {% include integrations/config_flow.md %}
 
 {% note %}
-This integration only connects to a single {% term host %} to access the entire HEOS System on the network. Select, or enter a host, that is connected to the LAN via wire or has the strongest wireless signal.
+Only a single instance of the integration is needed to access the entire HEOS system on the network. It will only connect to a single {% term host %}.
 {% endnote %}
+
+{% configuration_basic %}
+Host:
+    description: "The hostname or IP address of your HEOS device. If you have more than one device, select, or enter a host, that is connected to the LAN via wire or has the strongest wireless signal."
+{% endconfiguration_basic %}
 
 ## Removing the integration
 
