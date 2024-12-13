@@ -15,7 +15,8 @@ ha_platforms:
 ha_integration_type: integration
 ---
 
-The HEOS integration adds support for a [HEOS](https://www.denon.com/en-gb/category/heos/) System in Home Assistant.
+The HEOS {% term integration %} is used to connect a [HEOS](https://www.denon.com/en-gb/category/heos/) System to Home Assistant. HEOS is a wireless audio ecosystem
+that allows you to stream music to HEOS Built-in products from [Denon](https://www.denon.com/en-us/category/heos/) and [Marantz](https://www.marantz.com/en/world-of-marantz/heos-built-in.html).
 
 ## Supported functionality
 
