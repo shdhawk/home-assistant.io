@@ -33,7 +33,7 @@ An example of how the Nmap scanner can be customized:
 Network addresses to scan:
   description: Network range to scan using [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing). In the example above it will scan addresses from `192.168.1.1` to `192.168.1.254`.
 Minimum number of minutes between scans of active devices:
-  description: Frequency of the scans. The lower the number, the quicker it will detect devices connected and disconnected usually at the cost of the devices battery life. The example above will scan every minute.
+  description: Frequency of the scans. The lower the number, the quicker it will detect devices connected and disconnected usually at the cost of the devices battery life. The example above will scan every ten minute.
 Network addresses to exclude from scanning:
   description: A comma-separated list of IP addresses not to scan. The above example will skip `192.168.1.8`.
 Raw configurable scan options for Nmap:
